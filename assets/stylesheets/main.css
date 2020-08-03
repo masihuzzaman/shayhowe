@@ -46,3 +46,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+/* Picking a Box Size 
+Generally speaking, the best box-sizing value to use is border-box. The border-box value makes our math much, much easier. If we want an element to be 400 pixels wide, it is, and it will remain 400 pixels wide no matter what padding or border values we add to it. Additionally,
+we can easily mix length values. Say we want our box to be 40% wide. Adding a padding of 20 pixels and a border of 10 pixels around every side of an element isn’t difficult,
+and we can still guarantee that the actual width of our box will remain 40% despite using pixel values elsewhere. The only drawback to using the box-sizing property is that as part of the CSS3 specification,
+it isn’t supported in every browser; it especially lacks support in older browsers. Fortunately this is becoming less and less relevant as new browsers are released. Chances are we’re safe to use the box-sizing property,
+but should we notice any issues, it’s worth looking into which browser those issues are occurring with. 
+*/
+
+/* we can use the universal selector, *, along with universal pseudo-elements, *:before and *:after, to select every imaginable element and change the box-sizing to border-box. Remember,
+we’re going to want to include the necessary vendor prefixes for the box-sizing property, as it is a relatively new property. 
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
