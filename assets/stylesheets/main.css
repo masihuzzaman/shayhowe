@@ -143,7 +143,7 @@ h1, h3, h4, h5, p {
   .float-left {
  	float : left;
  	margin: 0 1.5%;
- 	width : 63%;
+ 	width : 30%;
  }
 
  .float-right {
@@ -158,9 +158,9 @@ h1, h3, h4, h5, p {
  	margin-bottom   : 0;
  }
 
- header,
+ /* header,
  section,
  aside,
  footer {
  	margin: 0 1.5% 24px 1.5%;
- }
+ } */
