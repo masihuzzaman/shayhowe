@@ -71,3 +71,13 @@ we’re going to want to include the necessary vendor prefixes for the box-sizin
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+	/*Next we’ll want to create a class that will serve as a container for our elements. We can use this container class on different elements to set a common width, center the elements on the page, and apply some common horizontal padding.*/
+	/* Just below our universal selector rule set, let’s create a selector with a class of container. Within this selector let’s set our width to 960 pixels, our left and right padding to 30 pixels, our top and bottom margins to 0, and our left and right margins to auto. */
+	/* Setting a width tells the browser definitively how wide any element with the class of container should be. Using a left and right margin of auto in conjunction with this width lets the browser automatically figure out equal left and right margins for the element, thus centering it on the page. Lastly, the left and right padding ensures that our content isn’t sitting directly on the edge of the element and provides a little breathing room for the content. */
+	.container {
+		margin       : 0 auto;
+		padding-left : 30px;
+		padding-right: 30px;
+		width        : 960px;
+	}
+  
