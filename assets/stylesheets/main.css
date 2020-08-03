@@ -114,5 +114,15 @@ h1, h3, h4, h5, p {
 }
 /* Using both the btn and btn-alt classes on the same <a> element allows these styles to be layered on, rendering all of the styles on a single element. */
 
+/*
+  ========================================
+  Home
+  ========================================
+*/
+/* Because we’re working on the home page, let’s also add a bit of padding to the <section> element that contains our <a> element with the classes of btn and btn-alt. We’ll do so by adding a class attribute value of hero to the <section> element, alongside the container class attribute value, as this will be the leading section of our website. */
+/* Next we’ll want to create a new section within our CSS file for home page styles, and, once we’re ready, we’ll use the class of hero to apply padding around all four sides of the <section> element. */
+.hero {
+	padding: 22px 80px 66px 80px;
+  }
 
   
