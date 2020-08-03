@@ -71,13 +71,48 @@ we’re going to want to include the necessary vendor prefixes for the box-sizin
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-	/*Next we’ll want to create a class that will serve as a container for our elements. We can use this container class on different elements to set a common width, center the elements on the page, and apply some common horizontal padding.*/
-	/* Just below our universal selector rule set, let’s create a selector with a class of container. Within this selector let’s set our width to 960 pixels, our left and right padding to 30 pixels, our top and bottom margins to 0, and our left and right margins to auto. */
-	/* Setting a width tells the browser definitively how wide any element with the class of container should be. Using a left and right margin of auto in conjunction with this width lets the browser automatically figure out equal left and right margins for the element, thus centering it on the page. Lastly, the left and right padding ensures that our content isn’t sitting directly on the edge of the element and provides a little breathing room for the content. */
-	.container {
-		margin       : 0 auto;
-		padding-left : 30px;
-		padding-right: 30px;
-		width        : 960px;
-	}
+
+/*Next we’ll want to create a class that will serve as a container for our elements. We can use this container class on different elements to set a common width, center the elements on the page, and apply some common horizontal padding.*/
+/* Just below our universal selector rule set, let’s create a selector with a class of container. Within this selector let’s set our width to 960 pixels, our left and right padding to 30 pixels, our top and bottom margins to 0, and our left and right margins to auto. */
+/* Setting a width tells the browser definitively how wide any element with the class of container should be. Using a left and right margin of auto in conjunction with this width lets the browser automatically figure out equal left and right margins for the element, thus centering it on the page. Lastly, the left and right padding ensures that our content isn’t sitting directly on the edge of the element and provides a little breathing room for the content. */
+.container {
+	margin       : 0 auto;
+	padding-left : 30px;
+	padding-right: 30px;
+	width        : 960px;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+/* Now that all of our content is centered, let’s create some vertical spacing between elements. For starters let’s place a 22-pixel bottom margin on a few of our heading and paragraph elements. We’ll place and comment on these typography styles below our grid styles. */
+h1, h3, h4, h5, p {
+	margin-bottom: 22px;
+  }
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+/* Let’s also try our hand at creating a border and some rounded corners. We’ll start by placing a button within the top <section> element on our home page, just below the header. */
+/* Previously we added an <a> element within this <section> element. Let’s add the classes of btn and btn-alt to this anchor.    */
+/* To begin let’s add the btn class and apply some common styles that can be shared across all buttons. We’ll want all of our buttons to have a 5-pixel border-radius. They should be displayed as inline-block elements so we can add padding around all four sides without issue; we’ll remove any margin. */
+
+.btn {
+	border-radius: 5px;
+	display      : inline-block;
+	margin       : 0;
+}
+
+/* We’ll also want to include styles specific to this button, which we’ll do by using the btn-alt class. Here we’ll add a 1-pixel, solid, gray border with 10 pixels of padding on the top and bottom of the button and 30 pixels of padding on the left and right of the button. */
+.btn-alt {
+	border : 1px solid #51a2f3;
+	padding: 10px 30px;
+}
+/* Using both the btn and btn-alt classes on the same <a> element allows these styles to be layered on, rendering all of the styles on a single element. */
+
+
   
