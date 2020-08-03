@@ -124,5 +124,43 @@ h1, h3, h4, h5, p {
 .hero {
 	padding: 22px 80px 66px 80px;
   }
+#section-1 {
+	display: block;
+	background-color: rgb(70, 197, 87);
+	border          : lightcoral solid 2px;
+}
 
-  
+#section-2 {
+	display: block;
+	background-color: lightblue;
+	border          : lightcoral solid 2px;
+}
+
+#section-3 {
+	background-color: rgb(114, 81, 235);
+	border          : lightcoral solid 2px;
+}
+  .float-left {
+ 	float : left;
+ 	margin: 0 1.5%;
+ 	width : 63%;
+ }
+
+ .float-right {
+ 	float : right;
+ 	margin: 0 1.5%;
+ 	width : 30%;
+ }
+
+ footer {
+ 	background-color: lightcoral;
+ 	clear           : both;
+ 	margin-bottom   : 0;
+ }
+
+ header,
+ section,
+ aside,
+ footer {
+ 	margin: 0 1.5% 24px 1.5%;
+ }
